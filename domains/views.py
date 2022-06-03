@@ -1,5 +1,4 @@
 import requests
-import tldextract
 from bs4 import BeautifulSoup
 
 from rest_framework import status
