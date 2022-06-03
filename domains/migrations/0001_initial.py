@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=255)),
                 ('dt', models.DateTimeField(auto_now_add=True)),
                 ('error', models.CharField(max_length=255)),
-                ('domain', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='urls', to='app.domain')),
+                ('domain', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='urls', to='domains.domain')),
             ],
         ),
     ]

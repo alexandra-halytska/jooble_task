@@ -1,4 +1,4 @@
-"""test_task URL Configuration
+"""domain_api URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/app/", include("app.urls", namespace="app")),
+    path("api/domains/", include("domains.urls", namespace="domains")),
 ]

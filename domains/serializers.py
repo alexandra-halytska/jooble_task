@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from app.models import Url, Domain
+from domains.models import Url, Domain
 
 
 class UrlSerializer(serializers.ModelSerializer):
