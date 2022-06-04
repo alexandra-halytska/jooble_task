@@ -21,8 +21,8 @@ class DomainApi(APIView):
             status_code = response.status_code
             error = response.reason
             title = BeautifulSoup(response.text, "lxml").find("title").text if status_code == 200 else ""
-        except ConnectionError:
-            error = "Connection Error"
+        except ConnectionError as e:
+            error = str(e)
             status_code = 0
 
         start = url.index("/") + 2
